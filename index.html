@@ -39,9 +39,9 @@
   I'm skilled in working with Agile teams, debugging tough issues, and delivering high-quality apps that align with business goals. Passionate about mobile innovation, I’m always exploring new tools and techniques to improve my craft and contribute to impactful projects.
 </p>
             <div class="social-media">
-                <a href="https://www.facebook.com/itsmhamza" target="_blank"><i class='bx bxl-facebook'></i></a>
-                <a href="https://www.instagram.com/itsmhamza/" target="_blank"><i class='bx bxl-instagram'></i></a>
-                <a href="https://www.linkedin.com/in/itsmhamza/" target="_blank" ><i class='bx bxl-linkedin' ></i></a>
+               <a href="mailto:loza.dev@example.com" target="_blank"><i class='bx bxs-envelope'></i></a>
+<a href="https://www.upwork.com/freelancers/~0130d545398a573d78" target="_blank"><i class='bx bxl-upwork'></i></a>
+<a href="https://www.linkedin.com/in/itsmhamza/" target="_blank" ><i class='bx bxl-linkedin' ></i></a>
             </div>
             <a href="assets/HamzaCV.pdf" download class="btn">Download CV</a>
             </div>
@@ -235,24 +235,29 @@
         <section class="contact" id="contact">
             <h2 class="heading">Contact <span>Me!</span></h2>
 
-            <form onsubmit="Mail(); reset(); return false;">
-                <div class="input-box">
-                    <input type="text" placeholder="Full Name" required id="Name">
-                    <input type="email" placeholder="Email Address" required id="Email">
-                </div>
-                <div class="input-box">
-                    <input type="number" placeholder="Mobile Number" required id="Contact">
-                    <input type="text" placeholder="Email Subject" required id="Subject">
-                </div>
-                <textarea name="" id="Message" cols="30" rows="10" placeholder="Your Message" required></textarea>
-                <input type="submit" value="Send Message" class="btn">
-            </form>
+            <form action="https://formspree.io/f/xzzgzggj" method="POST">
+  <div class="input-box">
+    <input type="text" name="name" placeholder="Full Name" required>
+    <input type="email" name="email" placeholder="Email Address" required>
+  </div>
+  <div class="input-box">
+    <input type="number" name="contact" placeholder="Mobile Number" required>
+    <input type="text" name="subject" placeholder="Email Subject" required>
+  </div>
+  <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+  <button type="submit" class="btn">Send Message</button>
+</form>
         </section>
 
 
          <footer class="footer">
             <div class="footer-text">
-                <p>Copyright &copy; 2023 by Hamza Awan | All Rights Reserved.</p>
+                <p><p>
+  Copyright &copy; 2025 by Hamza Awan | All Rights Reserved.<br>
+  Designed and developed using HTML, CSS & JavaScript.<br>
+  Always learning, always building — let's connect!
+</p>
+</p>
             </div>
             <div class="footer-iconTop">
                 <a href="#"><i class='bx bx-up-arrow-alt' ></i></a>
@@ -272,29 +277,6 @@
      <script src="https://unpkg.com/scrollreveal"></script>
 <script src="script.js"></script>
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-<script src="https://smtpjs.com/v3/smtp.js">
-</script>
-<script>
-    function Mail(){
-
-        let name = document.getElementById("Name").value;
-        let email = document.getElementById("Email").value;
-        let contact = document.getElementById("Contact").value;
-        let subject = document.getElementById("Subject").value;
-        let message = document.getElementById("Message").value;
-
-    Email.send({
-    Host : "smtp.elasticemail.com",
-    Username : "hammairawan1234@gmail.com",
-    Password : "73D771E767940B33E66A97BB76BC396D21A4",
-    To : 'duckybhai987@gmail.com',
-    From : "hammairawan1234@gmail.com",
-    Subject : "New Form Enquiry",
-    Body : "Name: " + name + "<br/> User Email: " + email + "<br/> Contact Number: " + contact+ "<br/> Subject: " + subject + "<br/> User Message: " + message
-}).then(
-    message => swal("Message Sent!", "Message has been Successfully sent!!", "success")
-);
-    }
-</script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
 </body>
 </html>
