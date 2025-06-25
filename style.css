@@ -472,15 +472,11 @@ span {
 }
 
 /* Responsive tweak */
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .skills-grid {
     grid-template-columns: 1fr;
   }
 }
-
-
-
-
 
 .experience-section {
   display: flex;
@@ -549,10 +545,16 @@ span {
 
 /* Responsive */
 @media (max-width: 600px) {
-  .timeline {
-    padding-left: 1rem;
-  }
+  .timeline,
   .timeline-item {
-    padding-left: 1rem;
+    padding-left: 1rem !important;
   }
 }
+
+.contact-subtitle {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 4rem;
+  color: #ccc;
+}
+
